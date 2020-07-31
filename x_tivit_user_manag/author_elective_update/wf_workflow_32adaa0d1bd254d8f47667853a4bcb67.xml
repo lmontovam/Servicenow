@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="DELETE">
+        <active>true</active>
+        <activity_stages>{"stages":{"fead6a4d1bd254d8f47667853a4bcb3d":{"duration":"2 Days","order":140,"stageId":"fead6a4d1bd254d8f47667853a4bcb3d","name":"Delivery","value":"delivery"},"b2adaa0d1bd254d8f47667853a4bcb6c":{"duration":"1 Day","order":100,"stageId":"b2adaa0d1bd254d8f47667853a4bcb6c","name":"Waiting for Approval","value":"waiting_for_approval"}},"ends":["7ead6a4d1bd254d8f47667853a4bcb43"],"subflows":[],"activities":{"f2ad6a4d1bd254d8f47667853a4bcb45":"fead6a4d1bd254d8f47667853a4bcb3d","3ead6a4d1bd254d8f47667853a4bcb40":"b2adaa0d1bd254d8f47667853a4bcb6c"}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>7aad6a4d1bd254d8f47667853a4bcb3e,3ead6a4d1bd254d8f47667853a4bcb40,f2ad6a4d1bd254d8f47667853a4bcb45,7ead6a4d1bd254d8f47667853a4bcb43</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>7aad6a4d1bd254d8f47667853a4bcb3e,3ead6a4d1bd254d8f47667853a4bcb40,f2ad6a4d1bd254d8f47667853a4bcb45,7ead6a4d1bd254d8f47667853a4bcb43</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>wf_user_management</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">7aad6a4d1bd254d8f47667853a4bcb3e</start>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>beadaa0d1bd254d8f47667853a4bcb68</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:44:02</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="wf_user_management">32adaa0d1bd254d8f47667853a4bcb67</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="DELETE">
+        <access>package_private</access>
+        <description/>
+        <name>wf_user_management</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_domain>17e65706dbc8730095c0d730cf9619a2</sys_domain>
+        <sys_domain_path>!!!/!!$/!!!/</sys_domain_path>
+        <sys_id>32adaa0d1bd254d8f47667853a4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>wf_user_management</sys_name>
+        <sys_overrides display_value="">8d8966411bda5810776c0e9fe54bcb1d</sys_overrides>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>wf_workflow_32adaa0d1bd254d8f47667853a4bcb67</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="DELETE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>72ad6a4d1bd254d8f47667853a4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>fead6a4d1bd254d8f47667853a4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>3eadaa0d1bd254d8f47667853a4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>faad6a4d1bd254d8f47667853a4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>7ead6a4d1bd254d8f47667853a4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>b2adaa0d1bd254d8f47667853a4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+    </wf_stage>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>7aad6a4d1bd254d8f47667853a4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=7aad6a4d1bd254d8f47667853a4bcb3e"/>
+    <wf_condition action="DELETE">
+        <activity display_value="Begin">7aad6a4d1bd254d8f47667853a4bcb3e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>3ead6a4d1bd254d8f47667853a4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7ead6a4d1bd254d8f47667853a4bcb43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+        <x>936</x>
+        <y>523</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=7ead6a4d1bd254d8f47667853a4bcb43"/>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Catalog Task">38891b6f0a0a0b1e00efdfdd77602027</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Exclusão</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Delivery">fead6a4d1bd254d8f47667853a4bcb3d</stage>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f2ad6a4d1bd254d8f47667853a4bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+        <x>17</x>
+        <y>305</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=f2ad6a4d1bd254d8f47667853a4bcb45"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>32ad6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f63ae0fc0a80066697c832ba44df4e1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>32ad6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f6814cfc0a8006605477949c2fa6e6e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>32ad6a4d1bd254d8f47667853a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f6d4120c0a8006655edc4495deb43ab</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>36ad6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>60571584dbac7700150587b30496190a</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f3c998c0a8016500d0204c0005453b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>3aad6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f79bbdbc0a80066479b2d5ea4863c24</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>3ead6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f79afac0a80165001b98ae987d06a5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>3ead6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f6728b4c0a80066478f02b692654b58</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>72ad6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f630a2cc0a80066385b16d90585802d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>76ad6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>1</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">c360af110a0a0ba97c533f11e09f464f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7aad6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f6c1eb6c0a8006633bb0f81ef62d520</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7aad6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f6e527c0a801650053e44a74e34315</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7ead6a4d1bd254d8f47667853a4bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">acb99baa0a0a0ba300d0938182192ad4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7ead6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7eb710cc0a80165001dace00d26aee0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b2ad6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f68b111c0a800662a07dc10fa198c4f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b6ad6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>4471bfdddbadbb00817ea19b8a96193d</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f2bd33c0a801650021da8ff242a081</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1660</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b6ad6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">98b96f90c0a800666b58ec516f330397</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>baad6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f722677c0a800664d3a879fadd87bfc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>bead6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">c360b4100a0a0ba97c533f1148325820</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1650</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f2ad6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>0</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">98b91165c0a800665c43a410b6f29fe5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f2ad6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7ee92ddc0a8016500b307a89bbf3db1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f6ad6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>4</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7ec9d5cc0a8016500a4ed439b25f438</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>faad6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">c360b80b0a0a0ba97c533f11a0c9814c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>fead6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>User Management - Exclusão de usuário</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f61655c0a8016500793dd16da8beff</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>fead6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f5ec60dc0a800667063095e6702d1ee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7ead6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7eb710cc0a80165001dace00d26aee0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f6ad6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>4</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7ec9d5cc0a8016500a4ed439b25f438</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>76ad6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>1</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">c360af110a0a0ba97c533f11e09f464f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>fead6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f5ec60dc0a800667063095e6702d1ee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>faad6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">c360b80b0a0a0ba97c533f11a0c9814c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>baad6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f722677c0a800664d3a879fadd87bfc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>72ad6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f630a2cc0a80066385b16d90585802d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>32ad6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f63ae0fc0a80066697c832ba44df4e1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>3ead6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f6728b4c0a80066478f02b692654b58</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>32ad6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f6814cfc0a8006605477949c2fa6e6e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b2ad6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f68b111c0a800662a07dc10fa198c4f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7aad6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f6c1eb6c0a8006633bb0f81ef62d520</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>32ad6a4d1bd254d8f47667853a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f6d4120c0a8006655edc4495deb43ab</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f2ad6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7ee92ddc0a8016500b307a89bbf3db1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b6ad6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>4471bfdddbadbb00817ea19b8a96193d</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f2bd33c0a801650021da8ff242a081</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>36ad6a4d1bd254d8f47667853a4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>60571584dbac7700150587b30496190a</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f3c998c0a8016500d0204c0005453b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>fead6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>User Management - Exclusão de usuário</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f61655c0a8016500793dd16da8beff</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7aad6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f6e527c0a801650053e44a74e34315</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>3ead6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">d7f79afac0a80165001b98ae987d06a5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>bead6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">c360b4100a0a0ba97c533f1148325820</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1650</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f2ad6a4d1bd254d8f47667853a4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>0</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">98b91165c0a800665c43a410b6f29fe5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1660</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b6ad6a4d1bd254d8f47667853a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">98b96f90c0a800666b58ec516f330397</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>7ead6a4d1bd254d8f47667853a4bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">acb99baa0a0a0ba300d0938182192ad4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f2ad6a4d1bd254d8f47667853a4bcb45</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>3aad6a4d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027">8f79bbdbc0a80066479b2d5ea4863c24</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Exclusão">f2ad6a4d1bd254d8f47667853a4bcb45</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>3aad6a4d1bd254d8f47667853a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Switch">f84eda480a0a3c1800a6fa8c7badf346</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Operação</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Waiting for Approval">b2adaa0d1bd254d8f47667853a4bcb6c</stage>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>3ead6a4d1bd254d8f47667853a4bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+        <x>16</x>
+        <y>121</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=3ead6a4d1bd254d8f47667853a4bcb40"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>3ead6a4d1bd254d8f47667853a4bcb40</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>36ad6a4d1bd254d8f47667853a4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>variable</value>
+        <variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>3ead6a4d1bd254d8f47667853a4bcb40</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b6ad6a4d1bd254d8f47667853a4bcb41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>3ead6a4d1bd254d8f47667853a4bcb40</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f6ad6a4d1bd254d8f47667853a4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>0c4ab1c91b5e1810776c0e9fe54bcb31</value>
+        <variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>3ead6a4d1bd254d8f47667853a4bcb40</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>36ad6a4d1bd254d8f47667853a4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>variable</value>
+        <variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>3ead6a4d1bd254d8f47667853a4bcb40</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f6ad6a4d1bd254d8f47667853a4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value>0c4ab1c91b5e1810776c0e9fe54bcb31</value>
+        <variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>3ead6a4d1bd254d8f47667853a4bcb40</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b6ad6a4d1bd254d8f47667853a4bcb41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <value/>
+        <variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Operação">3ead6a4d1bd254d8f47667853a4bcb40</activity>
+        <condition>activity.result == 'Alterar'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Alterar</name>
+        <order>1001</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>76ad6a4d1bd254d8f47667853a4bcb43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="DELETE">
+        <activity display_value="Operação">3ead6a4d1bd254d8f47667853a4bcb40</activity>
+        <condition>activity.result == 'Criar'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Criar</name>
+        <order>1000</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>fead6a4d1bd254d8f47667853a4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="DELETE">
+        <activity display_value="Operação">3ead6a4d1bd254d8f47667853a4bcb40</activity>
+        <condition>activity.result == 'Deletar'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Deletar</name>
+        <order>1002</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>f2ad6a4d1bd254d8f47667853a4bcb43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="DELETE">
+        <condition display_value="Alterar">76ad6a4d1bd254d8f47667853a4bcb43</condition>
+        <from display_value="Operação">3ead6a4d1bd254d8f47667853a4bcb40</from>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:42</sys_created_on>
+        <sys_id>2cbd2e0d1bd254d8f47667853a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:42</sys_updated_on>
+        <to display_value="Exclusão">f2ad6a4d1bd254d8f47667853a4bcb45</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Criar">fead6a4d1bd254d8f47667853a4bcb42</condition>
+        <from display_value="Operação">3ead6a4d1bd254d8f47667853a4bcb40</from>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:44</sys_created_on>
+        <sys_id>49bd6a0d1bd254d8f47667853a4bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:44</sys_updated_on>
+        <to display_value="Exclusão">f2ad6a4d1bd254d8f47667853a4bcb45</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">3ead6a4d1bd254d8f47667853a4bcb3f</condition>
+        <from display_value="Begin">7aad6a4d1bd254d8f47667853a4bcb3e</from>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>b2ad6a4d1bd254d8f47667853a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <to display_value="Operação">3ead6a4d1bd254d8f47667853a4bcb40</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">3aad6a4d1bd254d8f47667853a4bcb63</condition>
+        <from display_value="Exclusão">f2ad6a4d1bd254d8f47667853a4bcb45</from>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:36</sys_created_on>
+        <sys_id>c7ad6a4d1bd254d8f47667853a4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:36</sys_updated_on>
+        <to display_value="End">7ead6a4d1bd254d8f47667853a4bcb43</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Deletar">f2ad6a4d1bd254d8f47667853a4bcb43</condition>
+        <from display_value="Operação">3ead6a4d1bd254d8f47667853a4bcb40</from>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:35</sys_created_on>
+        <sys_id>cfad6a4d1bd254d8f47667853a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:35</sys_updated_on>
+        <to display_value="Exclusão">f2ad6a4d1bd254d8f47667853a4bcb45</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="DELETE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:43:34</sys_created_on>
+        <sys_id>36adaa0d1bd254d8f47667853a4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:43:34</sys_updated_on>
+        <workflow_version display_value="wf_user_management">beadaa0d1bd254d8f47667853a4bcb68</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="DELETE" query="workflow=32adaa0d1bd254d8f47667853a4bcb67^sys_id!=beadaa0d1bd254d8f47667853a4bcb68">
+        <published>false</published>
+    </wf_workflow_version>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="User Management">704931851b5e1810776c0e9fe54bcbde</application>
+        <file_path/>
+        <instance_id>159f16d8dbf6a70042b321c405961915</instance_id>
+        <instance_name>tivitdev</instance_name>
+        <name>wf_workflow_32adaa0d1bd254d8f47667853a4bcb67</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_workflow_version"&gt;&lt;wf_workflow_version action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;activity_stages&gt;{"stages":{"fead6a4d1bd254d8f47667853a4bcb3d":{"duration":"2 Days","order":140,"stageId":"fead6a4d1bd254d8f47667853a4bcb3d","name":"Delivery","value":"delivery"},"b2adaa0d1bd254d8f47667853a4bcb6c":{"duration":"1 Day","order":100,"stageId":"b2adaa0d1bd254d8f47667853a4bcb6c","name":"Waiting for Approval","value":"waiting_for_approval"}},"ends":["7ead6a4d1bd254d8f47667853a4bcb43"],"subflows":[],"activities":{"f2ad6a4d1bd254d8f47667853a4bcb45":"fead6a4d1bd254d8f47667853a4bcb3d","3ead6a4d1bd254d8f47667853a4bcb40":"b2adaa0d1bd254d8f47667853a4bcb6c"}}&lt;/activity_stages&gt;&lt;after_business_rules&gt;false&lt;/after_business_rules&gt;&lt;checked_out/&gt;&lt;checked_out_by/&gt;&lt;column_renderer display_value="Workflow-driven"&gt;a56213111b030100adca1e094f0713ac&lt;/column_renderer&gt;&lt;condition/&gt;&lt;condition_type/&gt;&lt;description/&gt;&lt;expected_sequences&gt;7aad6a4d1bd254d8f47667853a4bcb3e,3ead6a4d1bd254d8f47667853a4bcb40,f2ad6a4d1bd254d8f47667853a4bcb45,7ead6a4d1bd254d8f47667853a4bcb43&lt;/expected_sequences&gt;&lt;expected_time&gt;1970-01-01 14:00:00&lt;/expected_time&gt;&lt;expected_time_type/&gt;&lt;full_sequences&gt;7aad6a4d1bd254d8f47667853a4bcb3e,3ead6a4d1bd254d8f47667853a4bcb40,f2ad6a4d1bd254d8f47667853a4bcb45,7ead6a4d1bd254d8f47667853a4bcb43&lt;/full_sequences&gt;&lt;journal/&gt;&lt;max_activity_count&gt;100&lt;/max_activity_count&gt;&lt;name&gt;wf_user_management&lt;/name&gt;&lt;not_cacheable&gt;false&lt;/not_cacheable&gt;&lt;on_cancel&gt;&lt;![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]&gt;&lt;/on_cancel&gt;&lt;order&gt;100&lt;/order&gt;&lt;pin_type&gt;set_by_activity&lt;/pin_type&gt;&lt;published&gt;true&lt;/published&gt;&lt;relative_duration display_value="2 business days by 4pm"&gt;3bf802c20a0a0b52008e2859cd8abcf2&lt;/relative_duration&gt;&lt;requires_ert&gt;true&lt;/requires_ert&gt;&lt;run_multiple&gt;false&lt;/run_multiple&gt;&lt;schedule/&gt;&lt;stage_field&gt;stage&lt;/stage_field&gt;&lt;stage_order&gt;computed&lt;/stage_order&gt;&lt;start display_value="Begin"&gt;7aad6a4d1bd254d8f47667853a4bcb3e&lt;/start&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:44:02&lt;/sys_updated_on&gt;&lt;table&gt;sc_req_item&lt;/table&gt;&lt;timezone/&gt;&lt;validated&gt;false&lt;/validated&gt;&lt;workflow display_value="wf_user_management"&gt;32adaa0d1bd254d8f47667853a4bcb67&lt;/workflow&gt;&lt;/wf_workflow_version&gt;&lt;wf_workflow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;description/&gt;&lt;name&gt;wf_user_management&lt;/name&gt;&lt;preview/&gt;&lt;sys_class_name&gt;wf_workflow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_domain&gt;17e65706dbc8730095c0d730cf9619a2&lt;/sys_domain&gt;&lt;sys_domain_path&gt;!!!/!!$/!!!/&lt;/sys_domain_path&gt;&lt;sys_id&gt;32adaa0d1bd254d8f47667853a4bcb67&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;wf_user_management&lt;/sys_name&gt;&lt;sys_overrides display_value=""&gt;8d8966411bda5810776c0e9fe54bcb1d&lt;/sys_overrides&gt;&lt;sys_package display_value="User Management" source="x_tivit_user_manag"&gt;704931851b5e1810776c0e9fe54bcbde&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="User Management"&gt;704931851b5e1810776c0e9fe54bcbde&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_workflow_32adaa0d1bd254d8f47667853a4bcb67&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;table&gt;sc_req_item&lt;/table&gt;&lt;template&gt;false&lt;/template&gt;&lt;vars/&gt;&lt;/wf_workflow&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Completed&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;1100&lt;/order&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;72ad6a4d1bd254d8f47667853a4bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;value&gt;complete&lt;/value&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Delivery&lt;/name&gt;&lt;ola&gt;1970-01-03 00:00:00&lt;/ola&gt;&lt;order&gt;140&lt;/order&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;fead6a4d1bd254d8f47667853a4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;value&gt;delivery&lt;/value&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Fulfillment&lt;/name&gt;&lt;ola&gt;1970-01-02 00:00:00&lt;/ola&gt;&lt;order&gt;120&lt;/order&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;3eadaa0d1bd254d8f47667853a4bcb6b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;value&gt;fulfillment&lt;/value&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Request Cancelled&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;1000&lt;/order&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;faad6a4d1bd254d8f47667853a4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;value&gt;Request Cancelled&lt;/value&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Request Approved&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;90&lt;/order&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;7ead6a4d1bd254d8f47667853a4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;value&gt;request_approved&lt;/value&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Waiting for Approval&lt;/name&gt;&lt;ola&gt;1970-01-02 00:00:00&lt;/ola&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;b2adaa0d1bd254d8f47667853a4bcb6c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;value&gt;waiting_for_approval&lt;/value&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Begin"&gt;c7a5e32c0a0a0b3a002377c24ed8ea76&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;1&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input/&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Begin&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;7aad6a4d1bd254d8f47667853a4bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width&gt;80&lt;/width&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;x&gt;20&lt;/x&gt;&lt;y&gt;20&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7aad6a4d1bd254d8f47667853a4bcb3e"/&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Begin"&gt;7aad6a4d1bd254d8f47667853a4bcb3e&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;3ead6a4d1bd254d8f47667853a4bcb3f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="End"&gt;c7a66f7d0a0a0b3a004544a6d2f14076&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;1&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input/&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;End&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7ead6a4d1bd254d8f47667853a4bcb43&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width&gt;80&lt;/width&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;x&gt;936&lt;/x&gt;&lt;y&gt;523&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7ead6a4d1bd254d8f47667853a4bcb43"/&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Catalog Task"&gt;38891b6f0a0a0b1e00efdfdd77602027&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;3&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Exclusão&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage display_value="Delivery"&gt;fead6a4d1bd254d8f47667853a4bcb3d&lt;/stage&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;x&gt;17&lt;/x&gt;&lt;y&gt;305&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f2ad6a4d1bd254d8f47667853a4bcb45"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;32ad6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f63ae0fc0a80066697c832ba44df4e1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;620&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;32ad6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f6814cfc0a8006605477949c2fa6e6e&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;720&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;32ad6a4d1bd254d8f47667853a4bcb63&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f6d4120c0a8006655edc4495deb43ab&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;36ad6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;60571584dbac7700150587b30496190a&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f3c998c0a8016500d0204c0005453b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;2000&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3aad6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;// Set 'answer' to the number of seconds this timer should wait&amp;#13;
+answer = 0;&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f79bbdbc0a80066479b2d5ea4863c24&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1500&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3ead6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f79afac0a80165001b98ae987d06a5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;610&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3ead6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f6728b4c0a80066478f02b692654b58&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;72ad6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;3bf802c20a0a0b52008e2859cd8abcf2&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f630a2cc0a80066385b16d90585802d&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;40&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;76ad6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;c360af110a0a0ba97c533f11e09f464f&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;710&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7aad6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f6c1eb6c0a8006633bb0f81ef62d520&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7aad6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f6e527c0a801650053e44a74e34315&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1700&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7ead6a4d1bd254d8f47667853a4bcb45&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;acb99baa0a0a0ba300d0938182192ad4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7ead6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;sc_task&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7eb710cc0a80165001dace00d26aee0&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;700&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b2ad6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f68b111c0a800662a07dc10fa198c4f&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b6ad6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;4471bfdddbadbb00817ea19b8a96193d&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f2bd33c0a801650021da8ff242a081&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1660&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b6ad6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;// Set values for the task in this script.  Use the variable 'task' when setting additional values.&amp;#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&amp;#13;
+//&amp;#13;
+// For example:&amp;#13;
+//     task.short_description = current.short_description;&amp;#13;
+&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;98b96f90c0a800666b58ec516f330397&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;baad6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f722677c0a800664d3a879fadd87bfc&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;bead6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;c360b4100a0a0ba97c533f1148325820&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1650&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f2ad6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;98b91165c0a800665c43a410b6f29fe5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1000&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f2ad6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;Fields&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7ee92ddc0a8016500b307a89bbf3db1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;20&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f6ad6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;4&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7ec9d5cc0a8016500a4ed439b25f438&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;250&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;faad6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;c360b80b0a0a0ba97c533f11a0c9814c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;fead6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;User Management - Exclusão de usuário&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f61655c0a8016500793dd16da8beff&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;fead6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f5ec60dc0a800667063095e6702d1ee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7ead6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;sc_task&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7eb710cc0a80165001dace00d26aee0&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;20&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f6ad6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;4&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7ec9d5cc0a8016500a4ed439b25f438&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;40&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;76ad6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;c360af110a0a0ba97c533f11e09f464f&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;fead6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f5ec60dc0a800667063095e6702d1ee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;250&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;faad6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;c360b80b0a0a0ba97c533f11a0c9814c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;baad6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f722677c0a800664d3a879fadd87bfc&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;72ad6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;3bf802c20a0a0b52008e2859cd8abcf2&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f630a2cc0a80066385b16d90585802d&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;32ad6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f63ae0fc0a80066697c832ba44df4e1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;610&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3ead6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f6728b4c0a80066478f02b692654b58&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;620&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;32ad6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f6814cfc0a8006605477949c2fa6e6e&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;700&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b2ad6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f68b111c0a800662a07dc10fa198c4f&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;710&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7aad6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f6c1eb6c0a8006633bb0f81ef62d520&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;720&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;32ad6a4d1bd254d8f47667853a4bcb63&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f6d4120c0a8006655edc4495deb43ab&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1000&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f2ad6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;Fields&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7ee92ddc0a8016500b307a89bbf3db1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b6ad6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;4471bfdddbadbb00817ea19b8a96193d&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f2bd33c0a801650021da8ff242a081&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;36ad6a4d1bd254d8f47667853a4bcb48&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;60571584dbac7700150587b30496190a&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f3c998c0a8016500d0204c0005453b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;fead6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;User Management - Exclusão de usuário&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f61655c0a8016500793dd16da8beff&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7aad6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f6e527c0a801650053e44a74e34315&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1500&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3ead6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;d7f79afac0a80165001b98ae987d06a5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;bead6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;c360b4100a0a0ba97c533f1148325820&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1650&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f2ad6a4d1bd254d8f47667853a4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;98b91165c0a800665c43a410b6f29fe5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1660&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b6ad6a4d1bd254d8f47667853a4bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;// Set values for the task in this script.  Use the variable 'task' when setting additional values.&amp;#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&amp;#13;
+//&amp;#13;
+// For example:&amp;#13;
+//     task.short_description = current.short_description;&amp;#13;
+&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;98b96f90c0a800666b58ec516f330397&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;1700&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7ead6a4d1bd254d8f47667853a4bcb45&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;acb99baa0a0a0ba300d0938182192ad4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/document_key&gt;&lt;order&gt;2000&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3aad6a4d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;// Set 'answer' to the number of seconds this timer should wait&amp;#13;
+answer = 0;&lt;/value&gt;&lt;variable display_value="var__m_38891b6f0a0a0b1e00efdfdd77602027"&gt;8f79bbdbc0a80066479b2d5ea4863c24&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Exclusão"&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3aad6a4d1bd254d8f47667853a4bcb63&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Switch"&gt;f84eda480a0a3c1800a6fa8c7badf346&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;2&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Operação&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage display_value="Waiting for Approval"&gt;b2adaa0d1bd254d8f47667853a4bcb6c&lt;/stage&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;x&gt;16&lt;/x&gt;&lt;y&gt;121&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3ead6a4d1bd254d8f47667853a4bcb40"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;36ad6a4d1bd254d8f47667853a4bcb42&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;variable&lt;/value&gt;&lt;variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346"&gt;f85385830a0a3c18008599b17b971cbd&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b6ad6a4d1bd254d8f47667853a4bcb41&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346"&gt;f8575c7d0a0a3c1800b8f4d25403c852&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f6ad6a4d1bd254d8f47667853a4bcb42&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;0c4ab1c91b5e1810776c0e9fe54bcb31&lt;/value&gt;&lt;variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346"&gt;f855a43e0a0a3c180106a59800a50a22&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;36ad6a4d1bd254d8f47667853a4bcb42&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;variable&lt;/value&gt;&lt;variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346"&gt;f85385830a0a3c18008599b17b971cbd&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f6ad6a4d1bd254d8f47667853a4bcb42&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value&gt;0c4ab1c91b5e1810776c0e9fe54bcb31&lt;/value&gt;&lt;variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346"&gt;f855a43e0a0a3c180106a59800a50a22&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b6ad6a4d1bd254d8f47667853a4bcb41&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="var__m_f84eda480a0a3c1800a6fa8c7badf346"&gt;f8575c7d0a0a3c1800b8f4d25403c852&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Operação"&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/activity&gt;&lt;condition&gt;activity.result == 'Alterar'&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;false&lt;/is_positive&gt;&lt;name&gt;Alterar&lt;/name&gt;&lt;order&gt;1001&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;76ad6a4d1bd254d8f47667853a4bcb43&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Operação"&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/activity&gt;&lt;condition&gt;activity.result == 'Criar'&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;false&lt;/is_positive&gt;&lt;name&gt;Criar&lt;/name&gt;&lt;order&gt;1000&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;fead6a4d1bd254d8f47667853a4bcb42&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Operação"&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/activity&gt;&lt;condition&gt;activity.result == 'Deletar'&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;false&lt;/is_positive&gt;&lt;name&gt;Deletar&lt;/name&gt;&lt;order&gt;1002&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f2ad6a4d1bd254d8f47667853a4bcb43&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Alterar"&gt;76ad6a4d1bd254d8f47667853a4bcb43&lt;/condition&gt;&lt;from display_value="Operação"&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/from&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:42&lt;/sys_created_on&gt;&lt;sys_id&gt;2cbd2e0d1bd254d8f47667853a4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:42&lt;/sys_updated_on&gt;&lt;to display_value="Exclusão"&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Criar"&gt;fead6a4d1bd254d8f47667853a4bcb42&lt;/condition&gt;&lt;from display_value="Operação"&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/from&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:44&lt;/sys_created_on&gt;&lt;sys_id&gt;49bd6a0d1bd254d8f47667853a4bcb91&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:44&lt;/sys_updated_on&gt;&lt;to display_value="Exclusão"&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;3ead6a4d1bd254d8f47667853a4bcb3f&lt;/condition&gt;&lt;from display_value="Begin"&gt;7aad6a4d1bd254d8f47667853a4bcb3e&lt;/from&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;b2ad6a4d1bd254d8f47667853a4bcb65&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;to display_value="Operação"&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;3aad6a4d1bd254d8f47667853a4bcb63&lt;/condition&gt;&lt;from display_value="Exclusão"&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/from&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:36&lt;/sys_created_on&gt;&lt;sys_id&gt;c7ad6a4d1bd254d8f47667853a4bcb66&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:36&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;7ead6a4d1bd254d8f47667853a4bcb43&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Deletar"&gt;f2ad6a4d1bd254d8f47667853a4bcb43&lt;/condition&gt;&lt;from display_value="Operação"&gt;3ead6a4d1bd254d8f47667853a4bcb40&lt;/from&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:35&lt;/sys_created_on&gt;&lt;sys_id&gt;cfad6a4d1bd254d8f47667853a4bcb65&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:35&lt;/sys_updated_on&gt;&lt;to display_value="Exclusão"&gt;f2ad6a4d1bd254d8f47667853a4bcb45&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_estimated_runtime_config action="INSERT_OR_UPDATE"&gt;&lt;estimated_run_time/&gt;&lt;no_of_data_points&gt;1&lt;/no_of_data_points&gt;&lt;percentage_threshold_ert&gt;20&lt;/percentage_threshold_ert&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-27 18:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;36adaa0d1bd254d8f47667853a4bcb69&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-07-27 18:43:34&lt;/sys_updated_on&gt;&lt;workflow_version display_value="wf_user_management"&gt;beadaa0d1bd254d8f47667853a4bcb68&lt;/workflow_version&gt;&lt;/wf_estimated_runtime_config&gt;&lt;wf_workflow_version action="update_multiple" query="workflow=32adaa0d1bd254d8f47667853a4bcb67^sys_id!=beadaa0d1bd254d8f47667853a4bcb68"&gt;&lt;published&gt;false&lt;/published&gt;&lt;/wf_workflow_version&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1016902742</payload_hash>
+        <record_name>wf_user_management</record_name>
+        <reverted_from/>
+        <source>3c4931851b5e1810776c0e9fe54bcbe0</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:44:07</sys_created_on>
+        <sys_id>6acdee4d1bd254d8f47667853a4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1739196d0de0000001</sys_recorded_at>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:44:07</sys_updated_on>
+        <type>Workflow</type>
+        <update_guid>62cdee4df0d254d841f031909be214e8</update_guid>
+        <update_guid_history>62cdee4df0d254d841f031909be214e8:-1016902742</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="wf_user_management">544e22cd1bd254d8f47667853a4bcbff</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 18:46:08</sys_created_on>
+        <sys_db_object display_value="" name="wf_workflow">wf_workflow</sys_db_object>
+        <sys_id>5664da9582d445e595605bcc395bd561</sys_id>
+        <sys_metadata>32adaa0d1bd254d8f47667853a4bcb67</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>wf_user_management</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_scope_delete display_value="">4af13db8630944c69a2b1e54151c8384</sys_scope_delete>
+        <sys_update_name>wf_workflow_32adaa0d1bd254d8f47667853a4bcb67</sys_update_name>
+        <sys_update_version display_value="wf_workflow_32adaa0d1bd254d8f47667853a4bcb67">6acdee4d1bd254d8f47667853a4bcbe8</sys_update_version>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-27 18:46:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

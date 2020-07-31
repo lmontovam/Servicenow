@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access/>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <extension_model/>
+        <is_extendable>false</is_extendable>
+        <label>Backup Policy</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_tivit_user_manag_u_cmdb_ci_backup_policy</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Configuration Item" name="cmdb_ci">2d439919db1033008b15cf241496197d</super_class>
+        <sys_class_code>$+</sys_class_code>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path>/!!/$+</sys_class_path>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-30 18:25:10</sys_created_on>
+        <sys_id>9636020e1b1a901cf47667853a4bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Manag U CMDB CI Backup Policy</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>sys_db_object_9636020e1b1a901cf47667853a4bcb0f</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-30 18:25:10</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role/>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="User Management">704931851b5e1810776c0e9fe54bcbde</application>
+        <file_path/>
+        <instance_id>159f16d8dbf6a70042b321c405961915</instance_id>
+        <instance_name>tivitdev</instance_name>
+        <name>sys_db_object_9636020e1b1a901cf47667853a4bcb0f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Backup Policy</label><live_feed_enabled>false</live_feed_enabled><name>x_tivit_user_manag_u_cmdb_ci_backup_policy</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Configuration Item" name="cmdb_ci">2d439919db1033008b15cf241496197d</super_class><sys_class_code>$+</sys_class_code><sys_class_name>sys_db_object</sys_class_name><sys_class_path>/!!/$+</sys_class_path><sys_created_by>leandro.monteiro@tivit.com</sys_created_by><sys_created_on>2020-07-30 18:25:10</sys_created_on><sys_id>9636020e1b1a901cf47667853a4bcb0f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User Manag U CMDB CI Backup Policy</sys_name><sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package><sys_policy/><sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope><sys_update_name>sys_db_object_9636020e1b1a901cf47667853a4bcb0f</sys_update_name><sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by><sys_updated_on>2020-07-30 18:25:10</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-1857281951</payload_hash>
+        <record_name>Backup Policy</record_name>
+        <reverted_from/>
+        <source>3c4931851b5e1810776c0e9fe54bcbe0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-30 18:25:12</sys_created_on>
+        <sys_id>3a368e0e1b1a901cf47667853a4bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173a0f894e80000001</sys_recorded_at>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-30 18:25:12</sys_updated_on>
+        <type>Table</type>
+        <update_guid>b2368e0e8f1a901c2eefe290dbdb8918</update_guid>
+        <update_guid_history>b2368e0e8f1a901c2eefe290dbdb8918:-1857281951</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-30 18:30:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>3c4a989bc75942c0930906b02ad85440</sys_id>
+        <sys_metadata>9636020e1b1a901cf47667853a4bcb0f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Manag U CMDB CI Backup Policy</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_scope_delete display_value="">4af13db8630944c69a2b1e54151c8384</sys_scope_delete>
+        <sys_update_name>sys_db_object_9636020e1b1a901cf47667853a4bcb0f</sys_update_name>
+        <sys_update_version display_value="sys_db_object_9636020e1b1a901cf47667853a4bcb0f">3a368e0e1b1a901cf47667853a4bcb18</sys_update_version>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-30 18:30:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

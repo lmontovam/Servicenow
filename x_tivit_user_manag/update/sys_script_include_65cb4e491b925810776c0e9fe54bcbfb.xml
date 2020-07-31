@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tivit_user_manag.AjaxUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AjaxUtils</name>
+        <script><![CDATA[var AjaxUtils = Class.create();
+AjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getUser: function(){
+
+		var grUser = new GlideRecord('sys_user');
+		var user = this.getParameter('user');
+
+		grUser.get(user);
+
+		this.profifeIC('user_name',grUser.getValue('user_name'));
+		this.profifeIC('u_user_roles',grUser.getDisplayValue('u_user_roles'));
+
+	},
+	
+	getUserByMail:function(){
+		
+		var userMail = this.getParameter('userMail');
+		var grUser = new GlideRecord('sys_user');
+
+		grUser.addQuery('user_name',userMail);
+		grUser.query();
+
+		if (grUser.next())
+			return true;
+		else
+			return false;
+	},
+	
+	profifeIC: function(name, value) {
+		var parm = this.newItem("Parm");
+		parm.setAttribute("name",name);
+		parm.setAttribute("value",value);
+	},
+
+    type: 'AjaxUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-27 16:16:10</sys_created_on>
+        <sys_id>65cb4e491b925810776c0e9fe54bcbfb</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>AjaxUtils</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>sys_script_include_65cb4e491b925810776c0e9fe54bcbfb</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-28 11:04:41</sys_updated_on>
+    </sys_script_include>
+</record_update>
