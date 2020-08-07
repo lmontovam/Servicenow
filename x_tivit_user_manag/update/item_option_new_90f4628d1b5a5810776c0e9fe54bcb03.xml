@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="User Management">186971c51b5e1810776c0e9fe54bcbdd</cat_item>
+        <cat_item display_value="Gestão de Usuário">186971c51b5e1810776c0e9fe54bcbdd</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>

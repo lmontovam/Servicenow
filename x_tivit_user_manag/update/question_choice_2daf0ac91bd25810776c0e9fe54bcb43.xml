@@ -2,7 +2,7 @@
     <question_choice action="INSERT_OR_UPDATE">
         <misc>0</misc>
         <order>100</order>
-        <question display_value="User Roles">c65f42891bd25810776c0e9fe54bcb8a</question>
+        <question display_value="Licença">c65f42891bd25810776c0e9fe54bcb8a</question>
         <rec_misc>0</rec_misc>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>

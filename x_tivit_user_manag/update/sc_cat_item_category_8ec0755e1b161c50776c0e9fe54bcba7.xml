@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="User Management">186971c51b5e1810776c0e9fe54bcbdd</sc_cat_item>
+        <sc_cat_item display_value="Gestão de Usuário">186971c51b5e1810776c0e9fe54bcbdd</sc_cat_item>
         <sc_category display_value="Gestão de Usuário">7790bdde1b161c50776c0e9fe54bcbb5</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>

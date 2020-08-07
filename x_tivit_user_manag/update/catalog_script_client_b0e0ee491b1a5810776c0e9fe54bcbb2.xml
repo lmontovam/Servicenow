@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="User Management">186971c51b5e1810776c0e9fe54bcbdd</cat_item>
+        <cat_item display_value="Gestão de Usuário">186971c51b5e1810776c0e9fe54bcbdd</cat_item>
         <cat_variable>IO:6d078a851b525810776c0e9fe54bcb68</cat_variable>
         <condition/>
         <description/>
@@ -22,6 +22,18 @@
 	   
 	   g_form.setMandatory('opera_o',false);
 	   g_form.setReadOnly('opera_o',true);
+	   g_form.clearValue('opera_o');
+	   
+	    g_form.setMandatory('criar',false);
+		g_form.setMandatory('alterar',false);
+		g_form.setMandatory('deletar',false);
+		g_form.setMandatory('ativar_cs',false);
+	   
+	    g_form.setDisplay('criar',false);
+		g_form.setDisplay('alterar',false);
+		g_form.setDisplay('deletar',false);
+		g_form.setDisplay('ativar_cs',false);
+	   
       return;
    }
 
@@ -35,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b0e0ee491b1a5810776c0e9fe54bcbb2</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>02_Empresa</sys_name>
         <sys_overrides/>
         <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
@@ -43,7 +55,7 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>catalog_script_client_b0e0ee491b1a5810776c0e9fe54bcbb2</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-07-27 18:40:14</sys_updated_on>
+        <sys_updated_on>2020-08-07 16:17:29</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
