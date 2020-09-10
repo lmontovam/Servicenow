@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category_user_criteria_mtom">
+    <sc_category_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_category display_value="Gestão de Usuário">7790bdde1b161c50776c0e9fe54bcbb5</sc_category>
+        <sys_class_name>sc_category_user_criteria_mtom</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-01 18:04:46</sys_created_on>
+        <sys_id>1d0e37201b839410776c0e9fe54bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gestão de Usuário.Any User</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>sc_category_user_criteria_mtom_1d0e37201b839410776c0e9fe54bcb06</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-01 18:04:46</sys_updated_on>
+        <user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria>
+    </sc_category_user_criteria_mtom>
+</record_update>

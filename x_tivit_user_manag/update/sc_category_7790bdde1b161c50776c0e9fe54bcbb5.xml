@@ -22,14 +22,14 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-07-31 11:29:52</sys_created_on>
         <sys_id>7790bdde1b161c50776c0e9fe54bcbb5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Gestão de Usuário</sys_name>
         <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>sc_category_7790bdde1b161c50776c0e9fe54bcbb5</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-07-31 11:29:52</sys_updated_on>
+        <sys_updated_on>2020-09-01 18:04:46</sys_updated_on>
         <title>Gestão de Usuário</title>
     </sc_category>
     <sys_translated_text action="delete_multiple" query="documentkey=7790bdde1b161c50776c0e9fe54bcbb5"/>
