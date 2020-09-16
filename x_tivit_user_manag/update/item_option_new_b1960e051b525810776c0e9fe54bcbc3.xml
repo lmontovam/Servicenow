@@ -59,17 +59,18 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-07-27 15:53:57</sys_created_on>
         <sys_id>b1960e051b525810776c0e9fe54bcbc3</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Usuário</sys_name>
-        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>item_option_new_b1960e051b525810776c0e9fe54bcbc3</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-08-07 16:22:12</sys_updated_on>
+        <sys_updated_on>2020-09-16 18:52:02</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
+        <u_visible_sp_cart>false</u_visible_sp_cart>
         <ui_page/>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>advanced</use_reference_qualifier>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="17e65706dbc8730095c0d730cf9619a2" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>true</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Gestão de Usuário">186971c51b5e1810776c0e9fe54bcbdd</cat_item>
+        <cat_variable>IO:0c4ab1c91b5e1810776c0e9fe54bcb31</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>03_Operação</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	
+	g_form.setMandatory('criar',false);
+	g_form.setMandatory('alterar',false);
+	g_form.setMandatory('deletar',false);
+	g_form.setMandatory('ativar_cs',false);
+	g_form.setMandatory('trocar_cs',false);
+
+	g_form.setDisplay('criar',false);
+	g_form.setDisplay('alterar',false);
+	g_form.setDisplay('deletar',false);
+	g_form.setDisplay('ativar_cs',false);
+	g_form.setDisplay('trocar_cs',false);
+  
+	if (isLoading || newValue == '') {
+		return;
+	}
+	
+	g_form.setDisplay('user_management',true);
+	
+	if(g_form.getValue('opera_o') == 'Criar'){
+		g_form.setDisplay('criar',true);
+		g_form.setMandatory('user_id',true);
+		g_form.setMandatory('email',true);
+		g_form.setMandatory('nome',true);
+		g_form.setMandatory('user_roles',true);		
+	}
+	
+	if(g_form.getValue('opera_o') == 'Alterar')g_form.setDisplay('alterar',true);
+	
+	if(g_form.getValue('opera_o') == 'Deletar'){
+		g_form.setDisplay('deletar',true);
+		g_form.setMandatory('deletar',true);
+	}  
+	
+	if(g_form.getValue('opera_o') == 'Ativar'){
+		g_form.setDisplay('ativar_cs',true);
+		g_form.setMandatory('ativar_cs',true);
+	} 
+	
+	if(g_form.getValue('opera_o') == 'Trocar'){
+		g_form.setDisplay('trocar_cs',true);
+		g_form.setMandatory('trocar_cs',true);
+	} 
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 16:39:04</sys_created_on>
+        <sys_domain>17e65706dbc8730095c0d730cf9619a2</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>444af4291bdb5414f47667853a4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>03_Operação</sys_name>
+        <sys_overrides display_value="">c614820d1b125810776c0e9fe54bcbb9</sys_overrides>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>catalog_script_client_444af4291bdb5414f47667853a4bcbed</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 16:39:04</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="User Management">704931851b5e1810776c0e9fe54bcbde</application>
+        <file_path/>
+        <instance_id>159f16d8dbf6a70042b321c405961915</instance_id>
+        <instance_name>tivitdev</instance_name>
+        <name>catalog_script_client_444af4291bdb5414f47667853a4bcbed</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="17e65706dbc8730095c0d730cf9619a2" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;true&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Gestão de Usuário"&gt;186971c51b5e1810776c0e9fe54bcbdd&lt;/cat_item&gt;&lt;cat_variable&gt;IO:0c4ab1c91b5e1810776c0e9fe54bcb31&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;03_Operação&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	
+	g_form.setMandatory('criar',false);
+	g_form.setMandatory('alterar',false);
+	g_form.setMandatory('deletar',false);
+	g_form.setMandatory('ativar_cs',false);
+	g_form.setMandatory('trocar_cs',false);
+
+	g_form.setDisplay('criar',false);
+	g_form.setDisplay('alterar',false);
+	g_form.setDisplay('deletar',false);
+	g_form.setDisplay('ativar_cs',false);
+	g_form.setDisplay('trocar_cs',false);
+  
+	if (isLoading || newValue == '') {
+		return;
+	}
+	
+	g_form.setDisplay('user_management',true);
+	
+	if(g_form.getValue('opera_o') == 'Criar'){
+		g_form.setDisplay('criar',true);
+		g_form.setMandatory('user_id',true);
+		g_form.setMandatory('email',true);
+		g_form.setMandatory('nome',true);
+		g_form.setMandatory('user_roles',true);		
+	}
+	
+	if(g_form.getValue('opera_o') == 'Alterar')g_form.setDisplay('alterar',true);
+	
+	if(g_form.getValue('opera_o') == 'Deletar'){
+		g_form.setDisplay('deletar',true);
+		g_form.setMandatory('deletar',true);
+	}  
+	
+	if(g_form.getValue('opera_o') == 'Ativar'){
+		g_form.setDisplay('ativar_cs',true);
+		g_form.setMandatory('ativar_cs',true);
+	} 
+	
+	if(g_form.getValue('opera_o') == 'Trocar'){
+		g_form.setDisplay('trocar_cs',true);
+		g_form.setMandatory('trocar_cs',true);
+	} 
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-16 16:39:04&lt;/sys_created_on&gt;&lt;sys_domain&gt;17e65706dbc8730095c0d730cf9619a2&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;444af4291bdb5414f47667853a4bcbed&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;03_Operação&lt;/sys_name&gt;&lt;sys_overrides display_value=""&gt;c614820d1b125810776c0e9fe54bcbb9&lt;/sys_overrides&gt;&lt;sys_package display_value="User Management" source="x_tivit_user_manag"&gt;704931851b5e1810776c0e9fe54bcbde&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="User Management"&gt;704931851b5e1810776c0e9fe54bcbde&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_444af4291bdb5414f47667853a4bcbed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-16 16:39:04&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1245781694</payload_hash>
+        <record_name>03_Operação</record_name>
+        <reverted_from/>
+        <source>204a6d921b921c50776c0e9fe54bcb3b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 16:39:04</sys_created_on>
+        <sys_id>044a742d1bdb5414f47667853a4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17497c8a9270000001</sys_recorded_at>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 16:39:04</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>0c4a742dc2db54142b590c47a466dfaf</update_guid>
+        <update_guid_history>0c4a742dc2db54142b590c47a466dfaf:-1245781694</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="03_Operação">aa5a382d1bdb5414f47667853a4bcb14</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 16:39:30</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>4f7b4dde94634bb4a52ab84659c75190</sys_id>
+        <sys_metadata>444af4291bdb5414f47667853a4bcbed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>03_Operação</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_scope_delete display_value="">4af13db8630944c69a2b1e54151c8384</sys_scope_delete>
+        <sys_update_name>catalog_script_client_444af4291bdb5414f47667853a4bcbed</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_444af4291bdb5414f47667853a4bcbed">044a742d1bdb5414f47667853a4bcbb0</sys_update_version>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 16:39:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

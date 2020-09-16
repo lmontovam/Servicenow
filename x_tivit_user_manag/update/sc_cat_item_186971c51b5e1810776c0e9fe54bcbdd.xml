@@ -21,7 +21,7 @@
         <list_price>0</list_price>
         <location/>
         <mandatory_attachment>false</mandatory_attachment>
-        <meta>licenças;licença;gestão de usuário;usuário</meta>
+        <meta>Gestão de Usuários,gestao de usuarios,licença,service now,servicenow,Gestão de Usuário,gestao de usuario,gestão,gestao,usuário,usuários,usuario,usuarios</meta>
         <mobile_hide_price>false</mobile_hide_price>
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
@@ -58,14 +58,14 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-07-27 14:58:12</sys_created_on>
         <sys_id>186971c51b5e1810776c0e9fe54bcbdd</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Gestão de Usuário</sys_name>
         <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>sc_cat_item_186971c51b5e1810776c0e9fe54bcbdd</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-01 17:57:28</sys_updated_on>
+        <sys_updated_on>2020-09-16 17:49:26</sys_updated_on>
         <template/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>

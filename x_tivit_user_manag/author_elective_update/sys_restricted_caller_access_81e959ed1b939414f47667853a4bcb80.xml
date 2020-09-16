@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
+    <sys_restricted_caller_access action="DELETE">
+        <operation>execute</operation>
+        <source/>
+        <source_scope display_value="Global">global</source_scope>
+        <source_table>sys_ui_page</source_table>
+        <source_type>15</source_type>
+        <status>2</status>
+        <sys_class_name>sys_restricted_caller_access</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 18:57:34</sys_created_on>
+        <sys_id>81e959ed1b939414f47667853a4bcb80</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>global</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>sys_restricted_caller_access_81e959ed1b939414f47667853a4bcb80</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 19:09:39</sys_updated_on>
+        <target/>
+        <target_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</target_scope>
+        <target_table>sys_script_include</target_table>
+        <target_type>2</target_type>
+    </sys_restricted_caller_access>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="User Management">704931851b5e1810776c0e9fe54bcbde</application>
+        <file_path/>
+        <instance_id>159f16d8dbf6a70042b321c405961915</instance_id>
+        <instance_name>tivitdev</instance_name>
+        <name>sys_restricted_caller_access_81e959ed1b939414f47667853a4bcb80</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access"><sys_restricted_caller_access action="INSERT_OR_UPDATE"><operation>execute</operation><source/><source_scope display_value="Global">global</source_scope><source_table>sys_ui_page</source_table><source_type>15</source_type><status>2</status><sys_class_name>sys_restricted_caller_access</sys_class_name><sys_created_by>leandro.monteiro@tivit.com</sys_created_by><sys_created_on>2020-09-16 18:57:34</sys_created_on><sys_id>81e959ed1b939414f47667853a4bcb80</sys_id><sys_mod_count>4</sys_mod_count><sys_name>global</sys_name><sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package><sys_policy/><sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope><sys_update_name>sys_restricted_caller_access_81e959ed1b939414f47667853a4bcb80</sys_update_name><sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by><sys_updated_on>2020-09-16 19:09:39</sys_updated_on><target/><target_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</target_scope><target_table>sys_script_include</target_table><target_type>2</target_type></sys_restricted_caller_access></record_update>]]></payload>
+        <payload_hash>-1073899855</payload_hash>
+        <record_name>global</record_name>
+        <reverted_from/>
+        <source>204a6d921b921c50776c0e9fe54bcb3b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 19:09:39</sys_created_on>
+        <sys_id>cabc55211b179414f47667853a4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174985287450000001</sys_recorded_at>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 19:09:39</sys_updated_on>
+        <type>Restricted Caller Access Privilege</type>
+        <update_guid>cebc55218d17941422c6fd042b0da70c</update_guid>
+        <update_guid_history>cebc55218d17941422c6fd042b0da70c:-1073899855,bdfb1da97ed39414669798ff36a2f4fb:-1109872263,98cb51ed79939414457f5989deb8e779:22946424,5b9b912538d3941469cc9e3c886edc34:965800711,c9f95deda8939414a104cde934962d54:22946424</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 19:09:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_restricted_caller_access">sys_restricted_caller_access</sys_db_object>
+        <sys_id>c76e8caa473e40e0b5cb70d636913840</sys_id>
+        <sys_metadata>81e959ed1b939414f47667853a4bcb80</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_scope_delete display_value="">4af13db8630944c69a2b1e54151c8384</sys_scope_delete>
+        <sys_update_name>sys_restricted_caller_access_81e959ed1b939414f47667853a4bcb80</sys_update_name>
+        <sys_update_version display_value="sys_restricted_caller_access_81e959ed1b939414f47667853a4bcb80">cabc55211b179414f47667853a4bcb0d</sys_update_version>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 19:09:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

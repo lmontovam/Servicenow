@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
+    <sys_restricted_caller_access action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source/>
+        <source_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</source_scope>
+        <source_table/>
+        <source_type>5</source_type>
+        <status>2</status>
+        <sys_class_name>sys_restricted_caller_access</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 17:57:04</sys_created_on>
+        <sys_id>3ffb0dad1bdf5414f47667853a4bcb48</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>704931851b5e1810776c0e9fe54bcbde</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>sys_restricted_caller_access_3ffb0dad1bdf5414f47667853a4bcb48</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 17:58:07</sys_updated_on>
+        <target/>
+        <target_scope display_value="Global">global</target_scope>
+        <target_table/>
+        <target_type>3</target_type>
+    </sys_restricted_caller_access>
+</record_update>

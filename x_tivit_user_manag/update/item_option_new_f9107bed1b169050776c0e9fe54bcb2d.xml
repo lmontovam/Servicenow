@@ -36,11 +36,11 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>formatter</name>
+        <name>ativar_ce</name>
         <order>450</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
-        <question_text/>
+        <question_text>Ativar</question_text>
         <read_roles/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
@@ -59,17 +59,18 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-07-29 12:51:03</sys_created_on>
         <sys_id>f9107bed1b169050776c0e9fe54bcb2d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>formatter</sys_name>
-        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Ativar</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>item_option_new_f9107bed1b169050776c0e9fe54bcb2d</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-07-29 12:51:03</sys_updated_on>
+        <sys_updated_on>2020-09-16 18:52:03</sys_updated_on>
         <table/>
         <tooltip/>
         <type>20</type>
+        <u_visible_sp_cart>false</u_visible_sp_cart>
         <ui_page/>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>

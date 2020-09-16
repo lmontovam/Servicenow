@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <misc>0</misc>
+        <order>500</order>
+        <question display_value="Operação">0c4ab1c91b5e1810776c0e9fe54bcb31</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-29 12:43:33</sys_created_on>
+        <sys_id>d87e63651b169050776c0e9fe54bcb51</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Trocar licença entre usuário</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>question_choice_d87e63651b169050776c0e9fe54bcb51</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-14 17:41:33</sys_updated_on>
+        <text>Trocar licença entre usuário</text>
+        <value>Trocar</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=d87e63651b169050776c0e9fe54bcb51"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>d87e63651b169050776c0e9fe54bcb51</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-29 12:43:33</sys_created_on>
+        <sys_id>507eef691b169050776c0e9fe54bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:43:33</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>d87e63651b169050776c0e9fe54bcb51</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-29 12:43:33</sys_created_on>
+        <sys_id>187e63651b169050776c0e9fe54bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:43:33</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="User Management">704931851b5e1810776c0e9fe54bcbde</application>
+        <file_path/>
+        <instance_id>159f16d8dbf6a70042b321c405961915</instance_id>
+        <instance_name>tivitdev</instance_name>
+        <name>question_choice_d87e63651b169050776c0e9fe54bcb51</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><misc>0</misc><order>500</order><question display_value="Operação">0c4ab1c91b5e1810776c0e9fe54bcb31</question><rec_misc>0</rec_misc><sys_class_name>question_choice</sys_class_name><sys_created_by>leandro.monteiro@tivit.com</sys_created_by><sys_created_on>2020-07-29 12:43:33</sys_created_on><sys_id>d87e63651b169050776c0e9fe54bcb51</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Trocar licença entre usuário</sys_name><sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package><sys_policy/><sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope><sys_update_name>question_choice_d87e63651b169050776c0e9fe54bcb51</sys_update_name><sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by><sys_updated_on>2020-09-14 17:41:33</sys_updated_on><text>Trocar licença entre usuário</text><value>Trocar</value></question_choice><fx_price action="delete_multiple" query="id=d87e63651b169050776c0e9fe54bcb51"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>misc</field><id>d87e63651b169050776c0e9fe54bcb51</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>leandro.monteiro@tivit.com</sys_created_by><sys_created_on>2020-07-29 12:43:33</sys_created_on><sys_id>507eef691b169050776c0e9fe54bcbd7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by><sys_updated_on>2020-07-29 12:43:33</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>rec_misc</field><id>d87e63651b169050776c0e9fe54bcb51</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>leandro.monteiro@tivit.com</sys_created_by><sys_created_on>2020-07-29 12:43:33</sys_created_on><sys_id>187e63651b169050776c0e9fe54bcb52</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by><sys_updated_on>2020-07-29 12:43:33</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-972725476</payload_hash>
+        <record_name>Trocar licença entre usuário</record_name>
+        <reverted_from/>
+        <source>204a6d921b921c50776c0e9fe54bcb3b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-14 17:41:33</sys_created_on>
+        <sys_id>8c65ba741b535cd0f47667853a4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1748db5284a0000001</sys_recorded_at>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-14 17:41:33</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>8065ba7422535cd06b54fd71d80e58c0</update_guid>
+        <update_guid_history>8065ba7422535cd06b54fd71d80e58c0:-972725476,6255b674b4535cd0d08e80e3ca239b6f:1382235389,09d509489062581082ba2843fed48186:1462685611,089ee329ae16905097dfd6b2d17b8cbc:-598005141,d87eef694a169050fb8bc5cbccba3dd8:-2048011828</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Trocar licença entre usuário">2339296d1b979414f47667853a4bcb75</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 20:04:22</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>04b2534cddca4f4680eefbc24dbc7b24</sys_id>
+        <sys_metadata>d87e63651b169050776c0e9fe54bcb51</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Trocar licença entre usuário</sys_name>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_parent display_value="Operação">0c4ab1c91b5e1810776c0e9fe54bcb31</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_scope_delete display_value="">4af13db8630944c69a2b1e54151c8384</sys_scope_delete>
+        <sys_update_name>question_choice_d87e63651b169050776c0e9fe54bcb51</sys_update_name>
+        <sys_update_version display_value="question_choice_d87e63651b169050776c0e9fe54bcb51">8c65ba741b535cd0f47667853a4bcbc0</sys_update_version>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 20:04:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
