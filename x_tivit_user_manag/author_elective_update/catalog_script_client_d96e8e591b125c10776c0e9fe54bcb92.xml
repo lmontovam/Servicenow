@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Gestão de Usuário">186971c51b5e1810776c0e9fe54bcbdd</cat_item>
+        <cat_variable>IO:3b64e2c91b5a5810776c0e9fe54bcb3e</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>05_Valida UserID</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+	var ga = new GlideAjax('x_tivit_user_manag.AjaxUtils');
+    ga.addParam('sysparm_name', 'getUserByMail');
+    ga.addParam('userMail', newValue);
+    ga.getXMLAnswer(ajaxResponse);
+   
+}
+
+function ajaxResponse(answer) {
+
+		if (answer == 'true'){
+			g_form.addErrorMessage('User ID '+ newValue +' já está cadastrado!');
+			g_form.clearValue('user_id');
+		}
+}
+]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-07-28 11:11:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d96e8e591b125c10776c0e9fe54bcb92</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>05_Valida UserID</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name>catalog_script_client_d96e8e591b125c10776c0e9fe54bcb92</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 19:51:16</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="User Management">704931851b5e1810776c0e9fe54bcbde</application>
+        <file_path/>
+        <instance_id>159f16d8dbf6a70042b321c405961915</instance_id>
+        <instance_name>tivitdev</instance_name>
+        <name>catalog_script_client_d96e8e591b125c10776c0e9fe54bcb92</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Gestão de Usuário"&gt;186971c51b5e1810776c0e9fe54bcbdd&lt;/cat_item&gt;&lt;cat_variable&gt;IO:3b64e2c91b5a5810776c0e9fe54bcb3e&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;05_Valida UserID&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+	var ga = new GlideAjax('x_tivit_user_manag.AjaxUtils');
+    ga.addParam('sysparm_name', 'getUserByMail');
+    ga.addParam('userMail', newValue);
+    ga.getXMLAnswer(ajaxResponse);
+   
+}
+
+function ajaxResponse(answer) {
+
+		if (answer == 'true'){
+			g_form.addErrorMessage('User ID '+ newValue +' já está cadastrado!');
+			g_form.clearValue('user_id');
+		}
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;leandro.monteiro@tivit.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-07-28 11:11:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d96e8e591b125c10776c0e9fe54bcb92&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;05_Valida UserID&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="User Management"&gt;704931851b5e1810776c0e9fe54bcbde&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_d96e8e591b125c10776c0e9fe54bcb92&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;leandro.monteiro@tivit.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-16 19:51:16&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2115272242</payload_hash>
+        <record_name>05_Valida UserID</record_name>
+        <reverted_from/>
+        <source>204a6d921b921c50776c0e9fe54bcb3b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-16 19:51:16</sys_created_on>
+        <sys_id>f736ed211b979414f47667853a4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1749878a2320000001</sys_recorded_at>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-16 19:51:16</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>7f36ed21809794141ba0dbdee44fa998</update_guid>
+        <update_guid_history>7f36ed21809794141ba0dbdee44fa998:2115272242,87d3e9290957941429368f7f2211092d:-658609914,c4bbf821b71f541495512e5b28b4a283:2115272242,c3ab7821201f54143ea9ac962f573ddf:-941982613,8aab7821b01f5414e11a50f02d06948d:614110414,db8a3c2dc4db54146252288458cb6725:994072549,f98af82d4bdb54148517ed68779f1f6a:2003440120,5c8af82d8cdb5414d8a1eff814158b03:447347093,34cb2fadd2d290507e9059760a874da1:787521310,a65216d52b925c10e55d2ed8aad388ba:1646887772,f8229a15b3925c10de3d3948b694017b:-1667214654,24f09215cf925c10952c654d4af2a6e7:-1865290016,14b01a517c925c1048f9462081bd801a:1861991770,d2501291f4925c105ee72bcbe13c96e0:-1583759091,d6bf8211b5925c10586f9de14e83b514:-663658264</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="05_Valida UserID">9c0e4db51bd31454776c0e9fe54bcbff</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-09-17 12:43:50</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>00b8e799f02a4e6a8004cbb0bd53d391</sys_id>
+        <sys_metadata>d96e8e591b125c10776c0e9fe54bcb92</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>05_Valida UserID</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_scope_delete display_value="">4af13db8630944c69a2b1e54151c8384</sys_scope_delete>
+        <sys_update_name>catalog_script_client_d96e8e591b125c10776c0e9fe54bcb92</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_d96e8e591b125c10776c0e9fe54bcb92">f736ed211b979414f47667853a4bcb99</sys_update_version>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-09-17 12:43:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

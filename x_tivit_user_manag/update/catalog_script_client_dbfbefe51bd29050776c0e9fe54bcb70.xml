@@ -25,27 +25,23 @@
 	var ga = new GlideAjax('x_tivit_user_manag.AjaxUtils');
     ga.addParam('sysparm_name', 'getUserByMail');
     ga.addParam('userMail', newValue);
-    ga.getXMLAnswer(ajaxResponse);
-   
-}
-
-function ajaxResponse(answer) {
-
+    ga.getXMLAnswer(function(answer) {
 		if (answer == 'true'){
 			g_form.addErrorMessage('E-Mail '+ newValue +' já está cadastrado!');
 			g_form.clearValue('email');
 		}else{
 			g_form.setValue('user_id',newValue);
 		}
-}
-]]></script>
+});
+   
+}]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-07-29 12:32:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dbfbefe51bd29050776c0e9fe54bcb70</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>06_Valida Email</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
@@ -53,7 +49,7 @@ function ajaxResponse(answer) {
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>catalog_script_client_dbfbefe51bd29050776c0e9fe54bcb70</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-16 19:51:16</sys_updated_on>
+        <sys_updated_on>2020-09-17 18:30:14</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

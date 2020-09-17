@@ -18,21 +18,21 @@
         <scoped_administration>false</scoped_administration>
         <short_description/>
         <source>x_tivit_user_manag</source>
-        <store_correlation_id>REPOAPP0000280459</store_correlation_id>
+        <store_correlation_id>REPOAPP0000283916</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-07-27 14:54:37</sys_created_on>
         <sys_id>704931851b5e1810776c0e9fe54bcbde</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-16 20:08:53</sys_updated_on>
+        <sys_updated_on>2020-09-17 19:31:17</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.10</version>
+        <version>1.0.11</version>
     </sys_app>
 </record_update>

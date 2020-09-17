@@ -8,47 +8,51 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Gestão de Usuário">186971c51b5e1810776c0e9fe54bcbdd</cat_item>
-        <cat_variable/>
+        <cat_variable>IO:3b64e2c91b5a5810776c0e9fe54bcb3e</cat_variable>
         <condition/>
         <description/>
         <field/>
         <global>true</global>
         <isolate_script>false</isolate_script>
         <messages/>
-        <name>01_User Management_Desktop</name>
+        <name>05_Valida UserID</name>
         <order/>
-        <script><![CDATA[function onLoad() {
-	
-	g_form.setContainerDisplay('user_management',true);
-	g_form.setMandatory('empresa',true);
-	g_form.setContainerDisplay('opera_o',true);
-	g_form.setReadOnly('opera_o',true);
-	
-	g_form.setContainerDisplay('criar',false);
-	g_form.setContainerDisplay('alterar',false);
-	g_form.setContainerDisplay('deletar',false);
-	g_form.setContainerDisplay('ativar_cs',false);
-	g_form.setContainerDisplay('trocar_cs',false);
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+	var ga = new GlideAjax('x_tivit_user_manag.AjaxUtils');
+    ga.addParam('sysparm_name', 'getUserByMail');
+    ga.addParam('userMail', newValue);
+    ga.getXMLAnswer(function(answer) {
+
+		if (answer == 'true'){
+			g_form.addErrorMessage('User ID '+ newValue +' já está cadastrado!');
+			g_form.clearValue('user_id');
+		}
+});
    
-}]]></script>
+}
+]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
-        <sys_created_on>2020-09-16 19:45:23</sys_created_on>
+        <sys_created_on>2020-09-17 12:43:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>25e469e91b579414f47667853a4bcb8f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>01_User Management_Desktop</sys_name>
+        <sys_id>80dd09b51bd31454776c0e9fe54bcb0b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>05_Valida UserID</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
-        <sys_update_name>catalog_script_client_25e469e91b579414f47667853a4bcb8f</sys_update_name>
+        <sys_update_name>catalog_script_client_80dd09b51bd31454776c0e9fe54bcb0b</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-17 14:28:48</sys_updated_on>
+        <sys_updated_on>2020-09-17 18:30:04</sys_updated_on>
         <table/>
-        <type>onLoad</type>
-        <ui_type>0</ui_type>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
         <variable_set/>
         <view/>
     </catalog_script_client>
