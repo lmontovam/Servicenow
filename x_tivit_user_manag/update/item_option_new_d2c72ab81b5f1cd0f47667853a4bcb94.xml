@@ -23,7 +23,7 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <include_none>false</include_none>
-        <instructions/>
+        <instructions><![CDATA[<p>Usuário que irá receber a licença (Solucionador ou Aprovador) cedida pelo usuário de origem.</p>]]></instructions>
         <layout>normal</layout>
         <list_table/>
         <lookup_label/>
@@ -37,36 +37,36 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>user_add</name>
-        <order>510</order>
+        <order>515</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
-        <question_text>Adicionar Licença ao Usuário</question_text>
+        <question_text>Usuário Destino</question_text>
         <read_roles/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
         <reference>sys_user</reference>
-        <reference_qual>javascript:"company =" + current.variables.empresa + "^active=true^web_service_access_only=false^roles!=ITIL^roles!=business_stakeholder"</reference_qual>
+        <reference_qual>javascript:"company =" + current.variables.empresa + "^active=true^web_service_access_only=false"</reference_qual>
         <reference_qual_condition/>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
-        <show_help>false</show_help>
-        <show_help_on_load>false</show_help_on_load>
+        <show_help>true</show_help>
+        <show_help_on_load>true</show_help_on_load>
         <sp_widget/>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 16:42:11</sys_created_on>
         <sys_id>d2c72ab81b5f1cd0f47667853a4bcb94</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Adicionar Licença ao Usuário</sys_name>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Usuário Destino</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>item_option_new_d2c72ab81b5f1cd0f47667853a4bcb94</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-16 18:52:02</sys_updated_on>
+        <sys_updated_on>2020-10-08 14:11:20</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

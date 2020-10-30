@@ -12,8 +12,8 @@
         <description/>
         <ih_action>false</ih_action>
         <internal_name>user_management__troca</internal_name>
-        <label_cache>[{"name":"{{action.adduser}}","label":"action➛adduser","type":"action","ref":""},{"name":"{{action.remuser}}","label":"action➛remuser","type":"action","ref":""},{"name":"{{action.lcs}}","label":"action➛lcs","type":"action","ref":""},{"name":"{{action.adduser.sys_id}}","label":"action➛adduser➛Sys ID","type":"action","ref":""},{"name":"{{action.remuser.sys_id}}","label":"action➛remuser➛Sys ID","type":"action","ref":""}]</label_cache>
-        <latest_snapshot>fe11cf701b175cd0f47667853a4bcbb0</latest_snapshot>
+        <label_cache>[{"name":"{{action.adduser}}","label":"action➛adduser","type":"action","ref":""},{"name":"{{action.remuser}}","label":"action➛remuser","type":"action","ref":""},{"name":"{{action.lcs}}","label":"action➛lcs_origem","type":"action","ref":""},{"name":"{{action.adduser.sys_id}}","label":"action➛adduser➛Sys ID","type":"action","ref":""},{"name":"{{action.remuser.sys_id}}","label":"action➛remuser➛Sys ID","type":"action","ref":""},{"name":"{{action.lcs_origem}}","label":"action➛lcs_origem","type":"action","ref":""},{"name":"{{action.lcs_destino}}","label":"action➛lcs_destino","type":"action","ref":""}]</label_cache>
+        <latest_snapshot>03e95eab1ba790d0f47667853a4bcb66</latest_snapshot>
         <master_snapshot>a54fb23c1bd35cd0f47667853a4bcb63</master_snapshot>
         <name>User Management - Troca</name>
         <natlang/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>44bcfeb01bd35cd0f47667853a4bcb17</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>User Management - Troca</sys_name>
         <sys_overrides/>
         <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_44bcfeb01bd35cd0f47667853a4bcb17</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:50</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:40</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -57,14 +57,14 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:21:47</sys_created_on>
         <sys_id>519eb2781bd35cd0f47667853a4bcbe4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:44</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=519eb2781bd35cd0f47667853a4bcbe4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -75,9 +75,9 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:21:48</sys_created_on>
         <sys_id>259ef2781bd35cd0f47667853a4bcb18</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:44</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:30</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   
   grAddUser = new GlideRecord('sys_user');
@@ -86,12 +86,12 @@
   grRemUser = new GlideRecord('sys_user');
   grRemUser.get(inputs.RemUser);
     
-  grAddUser.setValue('u_user_roles',inputs.lcs);
+  grAddUser.setValue('u_user_roles',inputs.lcs_destino);
   grAddUser.update();
   
   grRemUser.setValue('u_custom_roles',false);
   grRemUser.update();
-  grRemUser.setValue('u_user_roles','Solicitante');
+  grRemUser.setValue('u_user_roles',inputs.lcs_origem);
   grRemUser.update();
 
 })(inputs, outputs);
@@ -150,6 +150,30 @@
         <value>{{action.lcs}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lcs_destino</field>
+        <id>519eb2781bd35cd0f47667853a4bcbe4</id>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:50</sys_created_on>
+        <sys_id>2ae712a71ba790d0f47667853a4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</table>
+        <value>{{action.lcs_destino}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lcs_origem</field>
+        <id>519eb2781bd35cd0f47667853a4bcbe4</id>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:50</sys_created_on>
+        <sys_id>e2e712a71ba790d0f47667853a4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</table>
+        <value>{{action.lcs_origem}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>RemUser</field>
         <id>519eb2781bd35cd0f47667853a4bcbe4</id>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
@@ -173,7 +197,88 @@
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=519eb2781bd35cd0f47667853a4bcbe4^sys_idNOT IN619eb2781bd35cd0f47667853a4bcbea,699ef2781bd35cd0f47667853a4bcb0d,ad9eb2781bd35cd0f47667853a4bcbef"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=519eb2781bd35cd0f47667853a4bcbe4^sys_idNOT IN1ee712a71ba790d0f47667853a4bcb80,619eb2781bd35cd0f47667853a4bcbea,ad9eb2781bd35cd0f47667853a4bcbef,dae712a71ba790d0f47667853a4bcb9f"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lcs_origem</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">519eb2781bd35cd0f47667853a4bcbe4</model>
+        <model_id>519eb2781bd35cd0f47667853a4bcbe4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:49</sys_created_on>
+        <sys_id>1ee712a71ba790d0f47667853a4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -283,87 +388,6 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>lcs</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label/>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Script step">519eb2781bd35cd0f47667853a4bcbe4</model>
-        <model_id>519eb2781bd35cd0f47667853a4bcbe4</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</name>
-        <next_element/>
-        <order>200</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
-        <sys_created_on>2020-09-14 18:21:48</sys_created_on>
-        <sys_id>699ef2781bd35cd0f47667853a4bcb0d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:21:48</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
         <element>RemUser</element>
         <element_reference>false</element_reference>
         <foreign_database/>
@@ -417,7 +441,88 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_action_input action="delete_multiple" query="model=44bcfeb01bd35cd0f47667853a4bcb17^sys_idNOT IN199eb2781bd35cd0f47667853a4bcbdb,999eb2781bd35cd0f47667853a4bcbd4,d59efa381bd35cd0f47667853a4bcbfe"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lcs_destino</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">519eb2781bd35cd0f47667853a4bcbe4</model>
+        <model_id>519eb2781bd35cd0f47667853a4bcbe4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:49</sys_created_on>
+        <sys_id>dae712a71ba790d0f47667853a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=44bcfeb01bd35cd0f47667853a4bcb17^sys_idNOT IN31e712a71ba790d0f47667853a4bcb5c,82e712a71ba790d0f47667853a4bcb64,999eb2781bd35cd0f47667853a4bcbd4,d59efa381bd35cd0f47667853a4bcbfe"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -446,7 +551,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>lcs</element>
+        <element>lcs_origem</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -454,7 +559,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>lcs</label>
+        <label>lcs_origem</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="User Management - Troca">44bcfeb01bd35cd0f47667853a4bcb17</model>
@@ -478,8 +583,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
-        <sys_created_on>2020-09-14 18:21:47</sys_created_on>
-        <sys_id>199eb2781bd35cd0f47667853a4bcbdb</sys_id>
+        <sys_created_on>2020-10-05 14:51:47</sys_created_on>
+        <sys_id>31e712a71ba790d0f47667853a4bcb5c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -487,7 +592,88 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:21:47</sys_updated_on>
+        <sys_updated_on>2020-10-05 14:51:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=11190b83-da5a-41b9-9496-1cf70b87be87</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lcs_destino</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>lcs_destino</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="User Management - Troca">44bcfeb01bd35cd0f47667853a4bcb17</model>
+        <model_id>44bcfeb01bd35cd0f47667853a4bcb17</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_44bcfeb01bd35cd0f47667853a4bcb17</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:47</sys_created_on>
+        <sys_id>82e712a71ba790d0f47667853a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -679,14 +865,14 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:21:47</sys_created_on>
         <sys_id>519eb2781bd35cd0f47667853a4bcbe4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:44</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=519eb2781bd35cd0f47667853a4bcbe4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -697,9 +883,9 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:21:48</sys_created_on>
         <sys_id>259ef2781bd35cd0f47667853a4bcb18</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:44</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:30</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   
   grAddUser = new GlideRecord('sys_user');
@@ -708,12 +894,12 @@
   grRemUser = new GlideRecord('sys_user');
   grRemUser.get(inputs.RemUser);
     
-  grAddUser.setValue('u_user_roles',inputs.lcs);
+  grAddUser.setValue('u_user_roles',inputs.lcs_destino);
   grAddUser.update();
   
   grRemUser.setValue('u_custom_roles',false);
   grRemUser.update();
-  grRemUser.setValue('u_user_roles','Solicitante');
+  grRemUser.setValue('u_user_roles',inputs.lcs_origem);
   grRemUser.update();
 
 })(inputs, outputs);
@@ -772,6 +958,30 @@
         <value>{{action.lcs}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lcs_destino</field>
+        <id>519eb2781bd35cd0f47667853a4bcbe4</id>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:50</sys_created_on>
+        <sys_id>2ae712a71ba790d0f47667853a4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</table>
+        <value>{{action.lcs_destino}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lcs_origem</field>
+        <id>519eb2781bd35cd0f47667853a4bcbe4</id>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:50</sys_created_on>
+        <sys_id>e2e712a71ba790d0f47667853a4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</table>
+        <value>{{action.lcs_origem}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>RemUser</field>
         <id>519eb2781bd35cd0f47667853a4bcbe4</id>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
@@ -795,7 +1005,88 @@
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=519eb2781bd35cd0f47667853a4bcbe4^sys_idNOT IN619eb2781bd35cd0f47667853a4bcbea,699ef2781bd35cd0f47667853a4bcb0d,ad9eb2781bd35cd0f47667853a4bcbef"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=519eb2781bd35cd0f47667853a4bcbe4^sys_idNOT IN1ee712a71ba790d0f47667853a4bcb80,619eb2781bd35cd0f47667853a4bcbea,ad9eb2781bd35cd0f47667853a4bcbef,dae712a71ba790d0f47667853a4bcb9f"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lcs_origem</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">519eb2781bd35cd0f47667853a4bcbe4</model>
+        <model_id>519eb2781bd35cd0f47667853a4bcbe4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:49</sys_created_on>
+        <sys_id>1ee712a71ba790d0f47667853a4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -905,87 +1196,6 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>lcs</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label/>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Script step">519eb2781bd35cd0f47667853a4bcbe4</model>
-        <model_id>519eb2781bd35cd0f47667853a4bcbe4</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</name>
-        <next_element/>
-        <order>200</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
-        <sys_created_on>2020-09-14 18:21:48</sys_created_on>
-        <sys_id>699ef2781bd35cd0f47667853a4bcb0d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:21:48</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
         <element>RemUser</element>
         <element_reference>false</element_reference>
         <foreign_database/>
@@ -1039,7 +1249,111 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_44bcfeb01bd35cd0f47667853a4bcb17^sys_idNOT IN5d9eb2781bd35cd0f47667853a4bcbd9,d99eb2781bd35cd0f47667853a4bcbe0,dd9eb2781bd35cd0f47667853a4bcbd2"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lcs_destino</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">519eb2781bd35cd0f47667853a4bcbe4</model>
+        <model_id>519eb2781bd35cd0f47667853a4bcbe4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_519eb2781bd35cd0f47667853a4bcbe4</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:49</sys_created_on>
+        <sys_id>dae712a71ba790d0f47667853a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_44bcfeb01bd35cd0f47667853a4bcb17^sys_idNOT IN06e712a71ba790d0f47667853a4bcb69,5d9eb2781bd35cd0f47667853a4bcbd9,cae712a71ba790d0f47667853a4bcb62,d99eb2781bd35cd0f47667853a4bcbe0,dd9eb2781bd35cd0f47667853a4bcbd2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>lcs_destino</element>
+        <help/>
+        <hint/>
+        <label>lcs_destino</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_44bcfeb01bd35cd0f47667853a4bcb17</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:48</sys_created_on>
+        <sys_id>06e712a71ba790d0f47667853a4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>adduser</element>
         <help/>
@@ -1060,6 +1374,29 @@
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
         <sys_updated_on>2020-09-14 18:21:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>lcs_origem</element>
+        <help/>
+        <hint/>
+        <label>lcs_origem</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_44bcfeb01bd35cd0f47667853a4bcb17</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:51:47</sys_created_on>
+        <sys_id>cae712a71ba790d0f47667853a4bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:51:47</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1113,14 +1450,14 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="User Management - Troca">44bcfeb01bd35cd0f47667853a4bcb17</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c24ff23c1bd35cd0f47667853a4bcbae","name":"plan"}}</plan>
-        <snapshot>fe11cf701b175cd0f47667853a4bcbb0</snapshot>
+        <snapshot>03e95eab1ba790d0f47667853a4bcb66</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:24:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c24ff23c1bd35cd0f47667853a4bcbae</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1128,7 +1465,7 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:51</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:41</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1141,7 +1478,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>user_management__troca</internal_name>
-        <label_cache>[{"name":"{{action.adduser}}","label":"action➛adduser","type":"action","ref":""},{"name":"{{action.remuser}}","label":"action➛remuser","type":"action","ref":""},{"name":"{{action.lcs}}","label":"action➛lcs","type":"action","ref":""},{"name":"{{action.adduser.sys_id}}","label":"action➛adduser➛Sys ID","type":"action","ref":""},{"name":"{{action.remuser.sys_id}}","label":"action➛remuser➛Sys ID","type":"action","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.adduser}}","label":"action➛adduser","type":"action","ref":""},{"name":"{{action.remuser}}","label":"action➛remuser","type":"action","ref":""},{"name":"{{action.lcs}}","label":"action➛lcs_origem","type":"action","ref":""},{"name":"{{action.adduser.sys_id}}","label":"action➛adduser➛Sys ID","type":"action","ref":""},{"name":"{{action.remuser.sys_id}}","label":"action➛remuser➛Sys ID","type":"action","ref":""},{"name":"{{action.lcs_origem}}","label":"action➛lcs_origem","type":"action","ref":""},{"name":"{{action.lcs_destino}}","label":"action➛lcs_destino","type":"action","ref":""}]</label_cache>
         <master>true</master>
         <name>User Management - Troca</name>
         <natlang/>
@@ -1153,7 +1490,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a54fb23c1bd35cd0f47667853a4bcb63</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1161,7 +1498,7 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:24:48</sys_updated_on>
+        <sys_updated_on>2020-10-05 14:52:04</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1185,14 +1522,14 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:24:49</sys_created_on>
         <sys_id>f94fb23c1bd35cd0f47667853a4bcb9f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:50</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f94fb23c1bd35cd0f47667853a4bcb9f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1203,9 +1540,9 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:24:49</sys_created_on>
         <sys_id>b14fb23c1bd35cd0f47667853a4bcbd3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:50</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   
   grAddUser = new GlideRecord('sys_user');
@@ -1214,12 +1551,12 @@
   grRemUser = new GlideRecord('sys_user');
   grRemUser.get(inputs.RemUser);
     
-  grAddUser.setValue('u_user_roles',inputs.lcs);
+  grAddUser.setValue('u_user_roles',inputs.lcs_destino);
   grAddUser.update();
   
   grRemUser.setValue('u_custom_roles',false);
   grRemUser.update();
-  grRemUser.setValue('u_user_roles','Solicitante');
+  grRemUser.setValue('u_user_roles',inputs.lcs_origem);
   grRemUser.update();
 
 })(inputs, outputs);
@@ -1278,6 +1615,30 @@
         <value>{{action.lcs}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lcs_destino</field>
+        <id>f94fb23c1bd35cd0f47667853a4bcb9f</id>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:07</sys_created_on>
+        <sys_id>f2f716a71ba790d0f47667853a4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:07</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f94fb23c1bd35cd0f47667853a4bcb9f</table>
+        <value>{{action.lcs_destino}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lcs_origem</field>
+        <id>f94fb23c1bd35cd0f47667853a4bcb9f</id>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:07</sys_created_on>
+        <sys_id>b6f716a71ba790d0f47667853a4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:07</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f94fb23c1bd35cd0f47667853a4bcb9f</table>
+        <value>{{action.lcs_origem}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>RemUser</field>
         <id>f94fb23c1bd35cd0f47667853a4bcb9f</id>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
@@ -1301,7 +1662,7 @@
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=f94fb23c1bd35cd0f47667853a4bcb9f^sys_idNOT IN394fb23c1bd35cd0f47667853a4bcba2,714fb23c1bd35cd0f47667853a4bcbc9,f54fb23c1bd35cd0f47667853a4bcbc2"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f94fb23c1bd35cd0f47667853a4bcb9f^sys_idNOT IN394fb23c1bd35cd0f47667853a4bcba2,e2f716a71ba790d0f47667853a4bcb26,eef716a71ba790d0f47667853a4bcb51,f54fb23c1bd35cd0f47667853a4bcbc2"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1411,7 +1772,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>lcs</element>
+        <element>lcs_origem</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -1419,7 +1780,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>lcs</label>
+        <label>lcs_origem</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Script step">f94fb23c1bd35cd0f47667853a4bcb9f</model>
@@ -1443,8 +1804,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
-        <sys_created_on>2020-09-14 18:24:49</sys_created_on>
-        <sys_id>714fb23c1bd35cd0f47667853a4bcbc9</sys_id>
+        <sys_created_on>2020-10-05 14:52:06</sys_created_on>
+        <sys_id>e2f716a71ba790d0f47667853a4bcb26</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1452,7 +1813,88 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:24:49</sys_updated_on>
+        <sys_updated_on>2020-10-05 14:52:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lcs_destino</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>lcs_destino</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f94fb23c1bd35cd0f47667853a4bcb9f</model>
+        <model_id>f94fb23c1bd35cd0f47667853a4bcb9f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f94fb23c1bd35cd0f47667853a4bcb9f</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:06</sys_created_on>
+        <sys_id>eef716a71ba790d0f47667853a4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1545,7 +1987,88 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_action_input action="delete_multiple" query="model=a54fb23c1bd35cd0f47667853a4bcb63^sys_idNOT INbd4fb23c1bd35cd0f47667853a4bcb7e,e54fb23c1bd35cd0f47667853a4bcb64,f14fb23c1bd35cd0f47667853a4bcb78"/>
+    <sys_hub_action_input action="delete_multiple" query="model=a54fb23c1bd35cd0f47667853a4bcb63^sys_idNOT IN12f7d2a71ba790d0f47667853a4bcbce,86f7d2a71ba790d0f47667853a4bcbc7,e54fb23c1bd35cd0f47667853a4bcb64,f14fb23c1bd35cd0f47667853a4bcb78"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=11190b83-da5a-41b9-9496-1cf70b87be87</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lcs_destino</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>lcs_destino</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="User Management - Troca">a54fb23c1bd35cd0f47667853a4bcb63</model>
+        <model_id>a54fb23c1bd35cd0f47667853a4bcb63</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a54fb23c1bd35cd0f47667853a4bcb63</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:05</sys_created_on>
+        <sys_id>12f7d2a71ba790d0f47667853a4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1574,7 +2097,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>lcs</element>
+        <element>lcs_origem</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -1582,7 +2105,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>lcs</label>
+        <label>lcs_origem</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="User Management - Troca">a54fb23c1bd35cd0f47667853a4bcb63</model>
@@ -1606,8 +2129,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
-        <sys_created_on>2020-09-14 18:24:49</sys_created_on>
-        <sys_id>bd4fb23c1bd35cd0f47667853a4bcb7e</sys_id>
+        <sys_created_on>2020-10-05 14:52:04</sys_created_on>
+        <sys_id>86f7d2a71ba790d0f47667853a4bcbc7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1615,7 +2138,7 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:24:49</sys_updated_on>
+        <sys_updated_on>2020-10-05 14:52:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1807,14 +2330,14 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:24:49</sys_created_on>
         <sys_id>f94fb23c1bd35cd0f47667853a4bcb9f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:50</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f94fb23c1bd35cd0f47667853a4bcb9f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1825,9 +2348,9 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 18:24:49</sys_created_on>
         <sys_id>b14fb23c1bd35cd0f47667853a4bcbd3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:32:50</sys_updated_on>
+        <sys_updated_on>2020-10-05 15:00:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   
   grAddUser = new GlideRecord('sys_user');
@@ -1836,12 +2359,12 @@
   grRemUser = new GlideRecord('sys_user');
   grRemUser.get(inputs.RemUser);
     
-  grAddUser.setValue('u_user_roles',inputs.lcs);
+  grAddUser.setValue('u_user_roles',inputs.lcs_destino);
   grAddUser.update();
   
   grRemUser.setValue('u_custom_roles',false);
   grRemUser.update();
-  grRemUser.setValue('u_user_roles','Solicitante');
+  grRemUser.setValue('u_user_roles',inputs.lcs_origem);
   grRemUser.update();
 
 })(inputs, outputs);
@@ -1900,6 +2423,30 @@
         <value>{{action.lcs}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lcs_destino</field>
+        <id>f94fb23c1bd35cd0f47667853a4bcb9f</id>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:07</sys_created_on>
+        <sys_id>f2f716a71ba790d0f47667853a4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:07</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f94fb23c1bd35cd0f47667853a4bcb9f</table>
+        <value>{{action.lcs_destino}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lcs_origem</field>
+        <id>f94fb23c1bd35cd0f47667853a4bcb9f</id>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:07</sys_created_on>
+        <sys_id>b6f716a71ba790d0f47667853a4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:07</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f94fb23c1bd35cd0f47667853a4bcb9f</table>
+        <value>{{action.lcs_origem}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>RemUser</field>
         <id>f94fb23c1bd35cd0f47667853a4bcb9f</id>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
@@ -1923,7 +2470,7 @@
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=f94fb23c1bd35cd0f47667853a4bcb9f^sys_idNOT IN394fb23c1bd35cd0f47667853a4bcba2,714fb23c1bd35cd0f47667853a4bcbc9,f54fb23c1bd35cd0f47667853a4bcbc2"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f94fb23c1bd35cd0f47667853a4bcb9f^sys_idNOT IN394fb23c1bd35cd0f47667853a4bcba2,e2f716a71ba790d0f47667853a4bcb26,eef716a71ba790d0f47667853a4bcb51,f54fb23c1bd35cd0f47667853a4bcbc2"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2033,7 +2580,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>lcs</element>
+        <element>lcs_origem</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -2041,7 +2588,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>lcs</label>
+        <label>lcs_origem</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Script step">f94fb23c1bd35cd0f47667853a4bcb9f</model>
@@ -2065,8 +2612,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
-        <sys_created_on>2020-09-14 18:24:49</sys_created_on>
-        <sys_id>714fb23c1bd35cd0f47667853a4bcbc9</sys_id>
+        <sys_created_on>2020-10-05 14:52:06</sys_created_on>
+        <sys_id>e2f716a71ba790d0f47667853a4bcb26</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -2074,7 +2621,88 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-14 18:24:49</sys_updated_on>
+        <sys_updated_on>2020-10-05 14:52:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lcs_destino</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>lcs_destino</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f94fb23c1bd35cd0f47667853a4bcb9f</model>
+        <model_id>f94fb23c1bd35cd0f47667853a4bcb9f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f94fb23c1bd35cd0f47667853a4bcb9f</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:06</sys_created_on>
+        <sys_id>eef716a71ba790d0f47667853a4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2167,7 +2795,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a54fb23c1bd35cd0f47667853a4bcb63^sys_idNOT IN3d4fb23c1bd35cd0f47667853a4bcb9c,614fb23c1bd35cd0f47667853a4bcb6a,f14fb23c1bd35cd0f47667853a4bcb7d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a54fb23c1bd35cd0f47667853a4bcb63^sys_idNOT IN3d4fb23c1bd35cd0f47667853a4bcb9c,52f7d2a71ba790d0f47667853a4bcbd3,5af7d2a71ba790d0f47667853a4bcbcc,614fb23c1bd35cd0f47667853a4bcb6a,f14fb23c1bd35cd0f47667853a4bcb7d"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>lcs</element>
         <help/>
@@ -2188,6 +2816,52 @@
         <sys_update_name/>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
         <sys_updated_on>2020-09-14 18:24:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>lcs_destino</element>
+        <help/>
+        <hint/>
+        <label>lcs_destino</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a54fb23c1bd35cd0f47667853a4bcb63</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:05</sys_created_on>
+        <sys_id>52f7d2a71ba790d0f47667853a4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>lcs_origem</element>
+        <help/>
+        <hint/>
+        <label>lcs_origem</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a54fb23c1bd35cd0f47667853a4bcb63</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2020-10-05 14:52:05</sys_created_on>
+        <sys_id>5af7d2a71ba790d0f47667853a4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="User Management" source="x_tivit_user_manag">704931851b5e1810776c0e9fe54bcbde</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2020-10-05 14:52:05</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>

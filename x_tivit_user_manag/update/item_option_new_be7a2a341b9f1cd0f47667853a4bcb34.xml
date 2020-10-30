@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <attributes/>
         <cat_item display_value="Gestão de Usuário">186971c51b5e1810776c0e9fe54bcbdd</cat_item>
         <category/>
@@ -59,14 +59,14 @@
         <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
         <sys_created_on>2020-09-14 16:53:57</sys_created_on>
         <sys_id>be7a2a341b9f1cd0f47667853a4bcb34</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Licença</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>item_option_new_be7a2a341b9f1cd0f47667853a4bcb34</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-16 18:52:02</sys_updated_on>
+        <sys_updated_on>2020-10-01 19:06:15</sys_updated_on>
         <table/>
         <tooltip/>
         <type>18</type>

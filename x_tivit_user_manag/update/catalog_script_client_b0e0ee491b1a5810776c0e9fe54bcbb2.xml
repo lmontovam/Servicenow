@@ -18,6 +18,7 @@
         <name>02_Empresa</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	g_form.setDisplay('attach',false);
    if (isLoading || newValue == '') {
 	   
 	   g_form.setMandatory('opera_o',false);
@@ -36,11 +37,13 @@
 		g_form.setDisplay('ativar_cs',false);
 		g_form.setDisplay('trocar_cs',false);
 	   
+	   
       return;
    }
 
 	g_form.setReadOnly('opera_o',false);
 	g_form.setMandatory('opera_o',true);
+	
    
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -49,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b0e0ee491b1a5810776c0e9fe54bcbb2</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>02_Empresa</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
@@ -57,7 +60,7 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>catalog_script_client_b0e0ee491b1a5810776c0e9fe54bcbb2</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-16 19:40:50</sys_updated_on>
+        <sys_updated_on>2020-10-16 19:49:28</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>1</ui_type>

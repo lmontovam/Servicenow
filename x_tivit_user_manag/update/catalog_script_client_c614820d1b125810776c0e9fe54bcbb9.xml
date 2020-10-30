@@ -59,7 +59,17 @@
 	
 	if(g_form.getValue('opera_o') == 'Trocar'){
 		g_form.setDisplay('trocar_cs',true);
-		g_form.setMandatory('trocar_cs',true);
+		
+		g_form.setMandatory('user_remove',true);
+		g_form.setMandatory('user_add',true);
+		//g_form.setMandatory('remove',true);
+		
+		g_form.setReadOnly('licenca_origem',true);
+		g_form.setReadOnly('licenca_destino',true);
+		
+		g_form.setDisplay('remove',false);
+		
+		
 	} 
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -68,7 +78,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c614820d1b125810776c0e9fe54bcbb9</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>03_Operação</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
@@ -76,7 +86,7 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>catalog_script_client_c614820d1b125810776c0e9fe54bcbb9</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-16 19:40:50</sys_updated_on>
+        <sys_updated_on>2020-10-01 20:10:33</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>1</ui_type>

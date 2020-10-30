@@ -29,6 +29,7 @@
 	g_form.setDisplay('deletar',false);
 	g_form.setDisplay('ativar_cs',false);
 	g_form.setDisplay('trocar_cs',false);
+	g_form.setDisplay('attach',false);
    
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -37,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c043c2891b125810776c0e9fe54bcbba</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>01_User Management</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
@@ -45,7 +46,7 @@
         <sys_scope display_value="User Management">704931851b5e1810776c0e9fe54bcbde</sys_scope>
         <sys_update_name>catalog_script_client_c043c2891b125810776c0e9fe54bcbba</sys_update_name>
         <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
-        <sys_updated_on>2020-09-16 19:36:27</sys_updated_on>
+        <sys_updated_on>2020-10-15 20:11:51</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>1</ui_type>
