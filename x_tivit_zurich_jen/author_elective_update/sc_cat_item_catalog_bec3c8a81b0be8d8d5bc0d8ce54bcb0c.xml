@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Zurich Jenkins">317384e41b0be8d8d5bc0d8ce54bcb16</sc_cat_item>
+        <sc_catalog display_value="Zurich">d28380281b0be8d8d5bc0d8ce54bcb99</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2021-03-18 20:02:40</sys_created_on>
+        <sys_id>bec3c8a81b0be8d8d5bc0d8ce54bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Zurich.Zurich Jenkins</sys_name>
+        <sys_package display_value="Zurich Jenkins" source="x_tivit_zurich_jen">4f4fb35c1b07e8d8d5bc0d8ce54bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zurich Jenkins">4f4fb35c1b07e8d8d5bc0d8ce54bcba7</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_bec3c8a81b0be8d8d5bc0d8ce54bcb0c</sys_update_name>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2021-03-18 20:02:40</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zurich Jenkins">4f4fb35c1b07e8d8d5bc0d8ce54bcba7</application>
+        <file_path/>
+        <instance_id>159f16d8dbf6a70042b321c405961915</instance_id>
+        <instance_name>tivitdev</instance_name>
+        <name>sc_cat_item_catalog_bec3c8a81b0be8d8d5bc0d8ce54bcb0c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Zurich Jenkins">317384e41b0be8d8d5bc0d8ce54bcb16</sc_cat_item><sc_catalog display_value="Zurich">d28380281b0be8d8d5bc0d8ce54bcb99</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>leandro.monteiro@tivit.com</sys_created_by><sys_created_on>2021-03-18 20:02:40</sys_created_on><sys_id>bec3c8a81b0be8d8d5bc0d8ce54bcb0c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Zurich.Zurich Jenkins</sys_name><sys_package display_value="Zurich Jenkins" source="x_tivit_zurich_jen">4f4fb35c1b07e8d8d5bc0d8ce54bcba7</sys_package><sys_policy/><sys_scope display_value="Zurich Jenkins">4f4fb35c1b07e8d8d5bc0d8ce54bcba7</sys_scope><sys_update_name>sc_cat_item_catalog_bec3c8a81b0be8d8d5bc0d8ce54bcb0c</sys_update_name><sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by><sys_updated_on>2021-03-18 20:02:40</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>676970041</payload_hash>
+        <record_name>Zurich.Zurich Jenkins</record_name>
+        <reverted_from/>
+        <source>034fb35c1b07e8d8d5bc0d8ce54bcbab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2021-03-18 20:02:40</sys_created_on>
+        <sys_id>76c3c8a81b0be8d8d5bc0d8ce54bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17846eed5960000001</sys_recorded_at>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2021-03-18 20:02:40</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>7ec3c8a88d0be8d8e448e587668d9a0f</update_guid>
+        <update_guid_history>7ec3c8a88d0be8d8e448e587668d9a0f:676970041</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Zurich.Zurich Jenkins">0c00b4fd1b0ba8dce373eb9fe54bcb1f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>leandro.monteiro@tivit.com</sys_created_by>
+        <sys_created_on>2021-03-22 20:28:13</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>0fbd437e516241488cafde8d90be0c40</sys_id>
+        <sys_metadata>bec3c8a81b0be8d8d5bc0d8ce54bcb0c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Zurich.Zurich Jenkins</sys_name>
+        <sys_package display_value="Zurich Jenkins" source="x_tivit_zurich_jen">4f4fb35c1b07e8d8d5bc0d8ce54bcba7</sys_package>
+        <sys_parent display_value="">317384e41b0be8d8d5bc0d8ce54bcb16</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Zurich Jenkins">4f4fb35c1b07e8d8d5bc0d8ce54bcba7</sys_scope>
+        <sys_scope_delete display_value="">021fef9999fb4888bbb44050933e5741</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_bec3c8a81b0be8d8d5bc0d8ce54bcb0c</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_bec3c8a81b0be8d8d5bc0d8ce54bcb0c">76c3c8a81b0be8d8d5bc0d8ce54bcb10</sys_update_version>
+        <sys_updated_by>leandro.monteiro@tivit.com</sys_updated_by>
+        <sys_updated_on>2021-03-22 20:28:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
