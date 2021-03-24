@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="ZJ Integration" max_length="40" name="x_tivit_zurich_jen_zj_integration" sizeclass="0" type="collection">
+    <element label="ZJ Integration" max_length="40" name="x_tivit_zurich_jen_zj_integration" type="collection">
         <element label="Response Body" max_length="1024" name="response_body" type="script"/>
         <element label="Status Code" max_length="40" name="status_code" type="string"/>
         <element choice="1" label="Success" max_length="40" name="success" type="boolean">
